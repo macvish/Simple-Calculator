@@ -10,7 +10,7 @@
         }
         .container{
             position: relative;
-            margin-left: 30%;
+            margin-left: 35%;
             padding: 20px 50px;
 
         }
@@ -53,6 +53,53 @@
             font-size: 20px;
             border: none;
             margin-top: 0.5em;
+        }
+        @media screen and (max-width: 800px){
+            .container{
+            position: relative;
+            margin-left: 25%;
+            padding: 20px 50px;
+            }
+            input{
+            width: 25%;
+            line-height: 12px;
+            font-size: 25px;
+            }
+            .btn{
+                margin: auto;
+            }
+
+            .btn button{
+                width: 60%;
+                height: 50px;
+                line-height: 20px;
+                font-size: 20px;
+                background-color: chartreuse;
+                border: none;
+                margin-top: 0.5em;
+            }
+            .btn button:hover{
+                background-color: darkgray;
+            }
+            .col.numb{
+                float: left;
+                width: 40%;
+            }
+            .col.oper{
+                float: left;
+                width: 60%;
+            }
+            .oper button{
+                width: 35%;
+            }
+            .full{
+                width: 65%;
+                height: 50px;
+                line-height: 20px;
+                font-size: 20px;
+                border: none;
+                margin-top: 0.5em;
+            }
         }
         </style>
     </head>
