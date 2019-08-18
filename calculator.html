@@ -62,7 +62,7 @@
             <input type="text">
             <div class="btn">
                 <div class="col numb">
-                    <button class="row clear" onclick="">CE</button>
+                    <button class="row" onclick="clearInput()">CE</button>
                 </div>
 
                 <div class="col oper">
@@ -72,16 +72,47 @@
                     <button value="/" id="div" onclick="div()">/</button><br/>
                 </div>
             </div>
-            <input class="full" disabled>
+            <input class="full answer" disabled>
         </div>
         <script>
             let add = () => {
-                let a = document.querySelector('input:nth-child(1)').value
-                let b = document.querySelector('input:nth-child(2)').value
-                let c = Number(a)
-                let d = Number(b)
-                let x = c + d
+                let a = Number(document.querySelector('input:nth-child(1)').value)
+                let b = Number(document.querySelector('input:nth-child(2)').value)
+                let x = a + b
+                let field = document.querySelector('.answer').value = x
                 console.log(x)
+            }
+            
+            let sub = () => {
+                let a = Number(document.querySelector('input:nth-child(1)').value)
+                let b = Number(document.querySelector('input:nth-child(2)').value)
+                let x = a - b
+                let field = document.querySelector('.answer').value = x
+                console.log(x)
+            }
+
+            let mult = () => {
+                let a = Number(document.querySelector('input:nth-child(1)').value)
+                let b = Number(document.querySelector('input:nth-child(2)').value)
+                let x = a * b
+                let field = document.querySelector('.answer').value = x
+                console.log(x)
+            }
+
+            let div = () => {
+                let a = Number(document.querySelector('input:nth-child(1)').value)
+                let b = Number(document.querySelector('input:nth-child(2)').value)
+                let x = a / b
+                let field = document.querySelector('.answer').value = x
+                console.log(x)
+            }
+
+            let clearInput = () => {
+                let a = document.querySelector('input:nth-child(1)').value = " "
+                let b = document.querySelector('input:nth-child(2)').value = " "
+                field = document.querySelector('.answer').value = " "
+
+                console.log(a, b, field)
             }
         </script>
     </body>
