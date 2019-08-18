@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta charset="utf-8">
+        <title>Simple Calculator</title>
+        <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            position: relative;
+            margin-left: 30%;
+            padding: 20px 50px;
+
+        }
+        input{
+            width: 15%;
+            line-height: 12px;
+            font-size: 25px;
+        }
+        .btn{
+            margin: auto;
+        }
+
+        .btn button{
+            width: 30%;
+            height: 50px;
+            line-height: 20px;
+            font-size: 20px;
+            background-color: chartreuse;
+            border: none;
+            margin-top: 0.5em;
+        }
+        .btn button:hover{
+            background-color: darkgray;
+        }
+        .col.numb{
+            float: left;
+            width: 20%;
+        }
+        .col.oper{
+            float: left;
+            width: 80%;
+        }
+        .oper button{
+            width: 10%;
+        }
+        .full{
+            width: 30%;
+            height: 50px;
+            line-height: 20px;
+            font-size: 20px;
+            border: none;
+            margin-top: 0.5em;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <input type="text">
+            <input type="text">
+            <div class="btn">
+                <div class="col numb">
+                    <button class="row clear" onclick="">CE</button>
+                </div>
+
+                <div class="col oper">
+                    <button value="+" id="add" onclick="add()">+</button><br/>
+                    <button value="-" id="sub" onclick="sub()">-</button><br/>
+                    <button value="*" id="mul" onclick="mult()">x</button><br/>
+                    <button value="/" id="div" onclick="div()">/</button><br/>
+                </div>
+            </div>
+            <input class="full" disabled>
+        </div>
+        <script>
+            let add = () => {
+                let a = document.querySelector('input:nth-child(1)').value
+                let b = document.querySelector('input:nth-child(2)').value
+                let c = Number(a)
+                let d = Number(b)
+                let x = c + d
+                console.log(x)
+            }
+        </script>
+    </body>
+</html>
