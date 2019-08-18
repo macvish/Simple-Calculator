@@ -12,28 +12,28 @@
             <input type="text" class="field">
             <div class="btn">
                 <div class="col numb">
-                    <button value="1" class="row-1">1</button>
-                    <button value="2" class="row-1">2</button>
-                    <button value="3" class="row-1">3</button><br/>
-                    <button value="4" class="row-2">4</button>
-                    <button value="5" class="row-2">5</button>
-                    <button value="6" class="row-2">6</button><br/>
-                    <button value="7" class="row-3">7</button>
-                    <button value="8" class="row-3">8</button>
-                    <button value="9" class="row-3">9</button><br/>
-                    <button value="." class="row-4">.</button>
-                    <button value="0" class="row-4">0</button>
-                    <button class="row-4 clear">CE</button>
+                    <button value="1" id="row1" onclick="one()">1</button>
+                    <button value="2" id="row2" onclick="two()">2</button>
+                    <button value="3" id="row3" onclick="thrre()">3</button><br/>
+                    <button value="4" id="row4" onclick="four()">4</button>
+                    <button value="5" id="row5" onclick="">5</button>
+                    <button value="6" id="row6" onclick="">6</button><br/>
+                    <button value="7" id="row7" onclick="">7</button>
+                    <button value="8" id="row8" onclick="">8</button>
+                    <button value="9" id="row9" onclick="">9</button><br/>
+                    <button value="." id="row10" onclick="">.</button>
+                    <button value="0" id="row11" onclick="">0</button>
+                    <button class="row clear" onclick="">CE</button>
                 </div>
 
                 <div class="col oper">
-                    <button value="+"class="col-1">+</button><br/>
-                    <button value="-"class="col-1">-</button><br/>
-                    <button value="*"class="col-1">x</button><br/>
-                    <button value="/"class="col-1">/</button><br/>
+                    <button value="+" id="add" onclick="">+</button><br/>
+                    <button value="-" id="sub" onclick="">-</button><br/>
+                    <button value="*" id="mul" onclick="">x</button><br/>
+                    <button value="/" id="div" onclick="">/</button><br/>
                 </div>
             </div>
-            <button value="="class="full">=</button>
+            <button value="=" class="full" onclick="equ()" >=</button>
         </div>
     </body>
 </html>
