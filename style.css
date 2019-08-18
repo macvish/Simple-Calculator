@@ -1,0 +1,16 @@
+.container{
+    position: relative;
+    margin: auto;
+}
+.btn button{
+    width: 15%;
+    height: 50px;
+    line-height: 20px;
+    font-size: 20px;
+    background-color: chartreuse;
+    border: none;
+    margin-top: 0.5em;
+}
+.btn button:hover{
+    background-color: darkgray;
+}
