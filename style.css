@@ -1,7 +1,27 @@
 .container{
     position: relative;
+    
+
+}
+input{
+    width: 50%;
+    line-height: 50px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+.btn{
     margin: auto;
 }
+.col-1{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.col-2{
+    position: absolute;
+
+}
+
 .btn button{
     width: 15%;
     height: 50px;
